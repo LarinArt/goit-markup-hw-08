@@ -1,0 +1,31 @@
+.theme {
+  padding: 200px 15px;
+  background-color: $primary-shade3-color;
+  text-align: center;
+}
+
+.theme-background {
+  margin: 0 auto;
+  max-width: 1600px;
+  background-image: linear-gradient(
+      to right,
+      rgba($primary-shade3-color, 0.4),
+      rgba($primary-shade3-color, 0.4)
+    ),
+    url(../images/main-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.theme__title {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.37;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $secondary-color;
+}

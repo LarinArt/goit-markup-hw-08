@@ -1,0 +1,27 @@
+.client-card {
+  justify-content: space-around;
+  display: flex;
+}
+
+.client-card__icon {
+  margin: 16px 32px;
+  fill: currentColor;
+}
+
+.client-card__link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  cursor: pointer;
+  border: 1px solid $primary-shade2-color;
+  background-color: $secondary-color;
+  border-radius: 4px;
+  color: $primary-shade2-color;
+
+  &:hover {
+    color: $accent-shade-color;
+    border-color: $accent-color;
+    @include transition(color);
+    @include transition(border-color);
+  }
+}

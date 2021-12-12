@@ -1,0 +1,8 @@
+.section-header {
+  border: 1px solid $secondary-shade1-color;
+
+  &__container-header {
+    display: flex;
+    align-items: center;
+  }
+}

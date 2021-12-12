@@ -1,0 +1,33 @@
+.footer {
+  font-style: normal;
+  background-color: $primary-shade3-color;
+  text-align: left;
+  padding: 60px 0 60px 15px;
+}
+
+.map-link {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $secondary-color;
+}
+
+.footer__contacts-item {
+  margin-top: 9px;
+}
+
+.footer__social-wrapper {
+  margin-left: 70px;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $secondary-color;
+}
