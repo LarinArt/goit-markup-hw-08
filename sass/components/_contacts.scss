@@ -1,9 +1,39 @@
 .contacts {
-  display: flex;
-  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    margin-top: 302px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @media screen and (min-width: $desktop) {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 
   &__item:last-child {
     margin-left: 50px;
+  }
+}
+
+.contacts__item {
+  @media screen and (max-width: 767px) {
+    &:first-child {
+      margin-bottom: 32px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    &:first-child {
+      margin-top: 10px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    &:last-child {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -30,6 +60,18 @@
   &:focus {
     color: $accent-color;
     @include transition(color);
+  }
+}
+
+.contacts__link {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
   }
 }
 
