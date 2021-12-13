@@ -1,8 +1,26 @@
 .footer {
+  padding: 60px 0;
   font-style: normal;
   background-color: $primary-shade3-color;
-  text-align: left;
-  padding: 60px 0 60px 15px;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.footer__container {
+  align-items: baseline;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: $desktop) {
+    justify-content: space-between;
+  }
 }
 
 .map-link {
@@ -19,7 +37,10 @@
 }
 
 .footer__social-wrapper {
-  margin-left: 70px;
+  width: 206px;
+  @media screen and (max-width: 767px) {
+    margin: 60px auto 0;
+  }
 }
 
 .footer__title {
@@ -30,4 +51,8 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $secondary-color;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }

@@ -6,13 +6,17 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
   &--black {
     color: $primary-color;
   }
 
   &--white {
     color: $secondary-color;
-    display: flex;
     margin-bottom: 20px;
   }
 

@@ -1,8 +1,11 @@
 .footer__form-element {
-  margin-left: auto;
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
 }
 
-.subscribe-form {
-  display: flex;
-  justify-content: space-between;
-}
+// .subscribe-form {
+//   @media screen and (max-width: 1199px) {
+//     margin-top: 60px;
+//   }
+// }

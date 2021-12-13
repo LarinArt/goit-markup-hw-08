@@ -7,6 +7,14 @@
   border-radius: 4px;
   font-family: $font-inherit;
 
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin: 0 12px 0 0;
+    width: 358px;
+  }
+
   &__label {
     margin-bottom: 4px;
     font-size: 12px;
@@ -38,7 +46,8 @@
 
 .input--subscribe {
   height: 50px;
-  width: 358px;
+  margin-bottom: 20px;
+  width: 100%;
   padding: 15px 16px;
   margin-right: 12px;
   border: 1px solid rgba($secondary-color, 0.3);

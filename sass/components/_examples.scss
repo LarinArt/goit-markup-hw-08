@@ -1,5 +1,8 @@
 .examples-section {
-  padding-bottom: 47px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  padding-bottom: 94px;
 }
 
 .examples {
