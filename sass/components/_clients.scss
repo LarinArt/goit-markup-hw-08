@@ -1,5 +1,5 @@
 .client-card {
-  justify-content: space-around;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
@@ -22,13 +22,13 @@
 }
 
 .client-card__icon {
-  margin: 16px 32px;
   fill: currentColor;
 }
 
 .client-card__link {
   display: flex;
-  width: 170px;
+  justify-content: center;
+  align-items: center;
   min-height: 92px;
   cursor: pointer;
   border: 1px solid $primary-shade2-color;
@@ -41,5 +41,15 @@
     border-color: $accent-color;
     @include transition(color);
     @include transition(border-color);
+  }
+}
+
+.clients__link {
+  @extend %flexCenter;
+  min-height: 92px;
+  border-radius: 4px;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
   }
 }

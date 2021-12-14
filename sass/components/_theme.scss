@@ -6,17 +6,64 @@
 }
 
 .theme-background {
-  margin: 0 auto;
-  max-width: 480px;
-  background-image: linear-gradient(
-      to right,
-      rgba($primary-shade3-color, 0.4),
-      rgba($primary-shade3-color, 0.4)
-    ),
-    url(../images/main-background-mobile.jpg);
+  @media screen and (min-width: $desktop) {
+    padding: 200px 0;
+  }
+  max-width: 1600px;
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  background-color: $secondary-shade2-color;
+  background-image: linear-gradient(
+      rgba($primary-shade4-color, 0.4),
+      rgba($primary-shade4-color, 0.4)
+    ),
+    url("../images/theme-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba($primary-shade4-color, 0.4),
+        rgba($primary-shade4-color, 0.4)
+      ),
+      url("../images/theme-mobile2x.jpg");
+  }
+
+  @media (min-width: 480px) {
+    background-image: linear-gradient(
+        rgba($primary-shade4-color, 0.4),
+        rgba($primary-shade4-color, 0.4)
+      ),
+      url("../images/theme-tablet.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba($primary-shade4-color, 0.4),
+          rgba($primary-shade4-color, 0.4)
+        ),
+        url("../images/theme-tablet@2x.jpg");
+    }
+  }
+  @media (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba($primary-shade4-color, 0.4),
+        rgba($primary-shade4-color, 0.4)
+      ),
+      url("../images/theme-desktop.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba($primary-shade4-color, 0.4),
+          rgba($primary-shade4-color, 0.4)
+        ),
+        url("../images/theme-desktop@2x.jpg");
+    }
+  }
 }
 
 .theme__title {

@@ -4,8 +4,8 @@
   }
 }
 
-// .subscribe-form {
-//   @media screen and (max-width: 1199px) {
-//     margin-top: 60px;
-//   }
-// }
+.subscribe-form {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}

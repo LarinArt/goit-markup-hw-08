@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
+    <title>WebStudio - Главная</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -90,34 +90,36 @@
                 </svg>
             </button>
             <div class="mobile-container js-menu-container" id="mobile-menu">
-                <nav class="nav">
-                    <ul class="nav__list list">
-                        <li class="nav__item">
-                            <a href="./index.html" class="nav__link nav__link--current">Студия</a>
+                <nav>
+                    <ul class="site-nav list">
+                        <li class="site-nav__item">
+                            <a href="./index.html" class="site-nav__link site-nav__link--choice">Студия</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="./portfolio.html" class="nav__link">Портфолио</a>
+                        <li class="site-nav__item">
+                            <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link">Контакты</a>
+                        <li class="site-nav__item">
+                            <a href="" class="site-nav__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
             <ul class="contacts list">
                 <li class="contacts__item">
-                    <a href="tel:+380961111111" class="contacts__link"><svg class="contacts__icon" width="10" height="16">
+                    <a href="tel:+380961111111" class="contacts__link contacts-link--header mobile--tel"><svg class="contacts__icon icon--tel" width="10" height="16">
+                            <use href="./images/icons.svg#icon-tel-tablet"></use>
                             <use href="./images/icons.svg#icon-tel"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
 
                 <li class="contacts__item">
-                    <a href="mailto:info@devstudio.com" class="contacts__link"><svg class="contacts__icon" width="16"
+                    <a href="mailto:info@devstudio.com" class="contacts__link contacts-link--header"><svg class="contacts__icon icon--email" width="16"
                             height="12">
                             <use href="./images/icons.svg#icon-mail"></use>
+                            <use href="./images/icons.svg#icon-mail-tablet"></use>
                         </svg>info@devstudio.com</a>
                 </li>
             </ul>
-            <ul class="menusocial list">
+            <ul class="menu-social list">
                 <li class="menu-social__item"><a href="" class="menu-social__link">Instagram</a></li>
                 <li class="menu-social__item"><a href="" class="menu-social__link">Twitter</a></li>
                 <li class="menu-social__item"><a href="" class="menu-social__link">Facebook</a></li>
@@ -238,7 +240,7 @@
 
                 <ul class="team-cards list">
                     <li class="team-cards__item">
-                            <img src="./images/img(4).jpg" width="270" alt="Игорь Демьяненко">
+                            <img srcset="./images/team-ihor-demyanenko.jpg 1x, ./images/team-ihor-demyanenko@2x.jpg 2x" src="./images/team-ihor-demyanenko.jpg" width="450" alt="Игорь Демьяненко">
                             <div class="team-cards__info">
                                     <h3 class="team-cards__teammate-name">Игорь Демьяненко</h3>
                                     <p class="team-cards__teammate-position">Product Designer</p>
@@ -276,10 +278,10 @@
                     </li>
                     <li class="team-cards__item">
                     
-                            <img src="./images/img(1).jpg" width="270" alt="Игорь Демьяненко">
+                            <img srcset="./images/team-olga-repina.jpg 1x, ./images/team-olga-repina@2x.jpg 2x" src="./images/team-olga-repina.jpg" width="450" alt="Ольга Репина">
                             <div class="team-cards__info">
-                                <h3 class="team-cards__teammate-name">Игорь Демьяненко</h3>
-                                <p class="team-cards__teammate-position">Product Designer</p>
+                                <h3 class="team-cards__teammate-name">Ольга Репина</h3>
+                                <p class="team-cards__teammate-position">Frontend Developer</p>
                                 <ul class="social-list list">
                                     <li class="social-list__item">
                                         <a class="social-list__link social-list__link--primary">
@@ -313,10 +315,10 @@
                             </div>
                     </li>
                     <li class="team-cards__item">
-                            <img src="./images/img(2).jpg" width="270" alt="Игорь Демьяненко">
+                            <img srcset="./images/team-nickolay-tarasov.jpg 1x, ./images/team-nickolay-tarasov@2x.jpg 2x" src="./images/team-nickolay-tarasov.jpg" width="450" alt="Николай Тарасов">
                             <div class="team-cards__info">
-                                <h3 class="team-cards__teammate-name">Игорь Демьяненко</h3>
-                                <p class="team-cards__teammate-position">Product Designer</p>
+                                <h3 class="team-cards__teammate-name">Николай Тарасов</h3>
+                                <p class="team-cards__teammate-position">Marketing</p>
                                 <ul class="social-list list">
                                     <li class="social-list__item">
                                         <a class="social-list__link social-list__link--primary">
@@ -350,10 +352,10 @@
                             </div>
                     </li>
                     <li class="team-cards__item">
-                            <img src="./images/img(3).jpg" width="270" alt="Игорь Демьяненко">
+                            <img  srcset="./images/team-michail-ermakov.jpg 1x, ./images/team-michail-ermakov@2x.jpg 2x" src="./images/team-michail-ermakov.jpg" width="450" alt="Михаил Ермаков">
                             <div class="team-cards__info">
-                                <h3 class="team-cards__teammate-name">Игорь Демьяненко</h3>
-                                <p class="team-cards__teammate-position">Product Designer</p>
+                                <h3 class="team-cards__teammate-name">Михаил Ермаков</h3>
+                                <p class="team-cards__teammate-position">UI Designer</p>
                                 <ul class="social-list list">
                                     <li class="social-list__item">
                                         <a class="social-list__link social-list__link--primary">
@@ -447,7 +449,7 @@
 
     <!-- Футер -->
     <footer class="footer">
-        <div class="container container--flex">
+        <div class="container footer__container">
             <div>
                 <a class="logo logo--white" href="./index.html" lang="en"><span
                         class="logo__web">Web</span>Studio</a>

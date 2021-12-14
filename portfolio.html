@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebStudio - Портфолио</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,28 +22,51 @@
     <header class="section-header">
         <div class="container section-header__container-header">
             <a class="logo logo--black" href="./index.html" lang="en"><span class="logo__web">Web</span>Studio</a>
-            <nav>
-                <ul class="site-nav list">
-                    <li class="site-nav__item"><a href="./index.html"
-                            class="site-nav__link">Студия</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--choice">Портфолио</a></li>
-                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="contacts list">
-                <li class="contacts__item">
-                    <a href="mailto:info@devstudio.com" class="contacts__link"><svg class="contacts__icon" width="16"
-                            height="12">
-                            <use href="./images/icons.svg#icon-mail"></use>
-                        </svg>info@devstudio.com</a>
-                </li>
+            <button type="button" class="menu-button js-open-menu js-close-menu" aria-expanded="false"
+                aria-controls="mobile-menu">
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                    <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
+            <div class="mobile-container js-menu-container" id="mobile-menu">
+                <nav>
+                    <ul class="site-nav list">
+                        <li class="site-nav__item">
+                            <a href="./index.html" class="site-nav__link">Студия</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="./portfolio.html" class="site-nav__link site-nav__link--choice">Портфолио</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="" class="site-nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contacts list">
+                    <li class="contacts__item">
+                        <a href="tel:+380961111111" class="contacts__link contacts-link--header mobile--tel"><svg
+                                class="contacts__icon icon--tel" width="10" height="16">
+                                <use href="./images/icons.svg#icon-tel-tablet"></use>
+                                <use href="./images/icons.svg#icon-tel"></use>
+                            </svg>+38 096 111 11 11</a>
+                    </li>
     
-                <li class="contacts__item">
-                    <a href="tel:+380961111111" class="contacts__link"><svg class="contacts__icon" width="10" height="16">
-                            <use href="./images/icons.svg#icon-tel"></use>
-                        </svg>+38 096 111 11 11</a>
-                </li>
-            </ul>
+                    <li class="contacts__item">
+                        <a href="mailto:info@devstudio.com" class="contacts__link contacts-link--header"><svg
+                                class="contacts__icon icon--email" width="16" height="12">
+                                <use href="./images/icons.svg#icon-mail"></use>
+                                <use href="./images/icons.svg#icon-mail-tablet"></use>
+                            </svg>info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="menu-social list">
+                    <li class="menu-social__item"><a href="" class="menu-social__link">Instagram</a></li>
+                    <li class="menu-social__item"><a href="" class="menu-social__link">Twitter</a></li>
+                    <li class="menu-social__item"><a href="" class="menu-social__link">Facebook</a></li>
+                    <li class="menu-social__item"><a href="" class="menu-social__link">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 

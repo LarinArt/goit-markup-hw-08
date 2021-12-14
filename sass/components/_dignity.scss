@@ -1,11 +1,4 @@
-.dignity-section {
-  padding-bottom: 47px;
-}
-
 .dignity-cards {
-  // display: flex;
-  // justify-content: space-between;
-
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
