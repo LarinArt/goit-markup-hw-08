@@ -7,22 +7,6 @@
   border-radius: 4px;
   font-family: $font-inherit;
 
-  @media screen and (min-width: $tablet) {
-    width: 450px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin: 0 12px 0 0;
-    width: 358px;
-  }
-
-  &__label {
-    margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: $secondary-shade3-color;
-  }
-
   &__field {
     display: flex;
     flex-direction: column;
@@ -33,15 +17,39 @@
     position: relative;
   }
 
-  &__icon {
-    fill: currentColor;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 12px;
-
-    transform: translateY(-50%);
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    outline: 0;
   }
+}
+
+.input__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $secondary-shade3-color;
+}
+
+.input__icon {
+  fill: currentColor;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transform: translateY(-50%);
+}
+
+.input:hover + .input__icon,
+.input:focus + .input__icon {
+  fill: $accent-color;
+}
+
+.input:hover ~ .input__label,
+.input:focus ~ .input__label {
+  color: currentColor;
 }
 
 .input--subscribe {
