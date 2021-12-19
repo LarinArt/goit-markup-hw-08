@@ -1,6 +1,5 @@
 .contacts {
   @media screen and (max-width: 767px) {
-    margin-top: 302px;
   }
   @media screen and (min-width: $tablet) {
     margin-left: auto;
@@ -52,14 +51,6 @@
     color: rgba($secondary-color, 0.6);
   }
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
-    @include transition(color);
-  }
-}
-
-.contacts__link {
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
@@ -69,9 +60,15 @@
   @media screen and (min-width: $desktop) {
     font-size: 14px;
   }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    @include transition(color);
+  }
 }
 
-.contacts-link--header {
+.contacts-link--primary {
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;

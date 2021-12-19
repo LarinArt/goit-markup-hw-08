@@ -1,20 +1,16 @@
 .section-header {
   border: 1px solid $secondary-shade1-color;
 
-  &__container-header {
+  &__contain {
     display: flex;
     align-items: center;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 16px 0;
+    position: sticky;
     top: 0;
-    left: 0;
+    padding: 16px 0;
     width: 100%;
     background-color: $secondary-color;
-  }
-
-  @media screen and (min-width: $tablet) {
-    padding: 25px 0;
   }
 }

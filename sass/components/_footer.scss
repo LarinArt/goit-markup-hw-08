@@ -10,10 +10,9 @@
 }
 
 .footer__container {
-  align-items: baseline;
-
   @media screen and (min-width: $tablet) {
     display: flex;
+    align-items: baseline;
     flex-wrap: wrap;
     justify-content: space-around;
   }

@@ -20,9 +20,8 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 // FONTS
 $font-inherit: inherit;
-$font-Raleway: Raleway;
-$font-Roboto: Roboto;
-$font-sans-serif: sans-serif;
+$font-Raleway: Raleway, sans-serif;
+$font-Roboto: Roboto, sans-serif;
 
 // VIEWPORT WITH
 $mobile: 480px;

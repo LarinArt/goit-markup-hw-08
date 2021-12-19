@@ -36,11 +36,17 @@
 }
 
 .portfolio-cards__link {
+  display: block;
   @include transition(box-shadow);
   text-decoration: none;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+}
+
+.portfolio-cards__image-wrapper {
+  cursor: pointer;
+  // z-index: -1;
+  position: relative;
+  overflow: hidden;
+  @include transition(box-shadow);
 
   &:hover,
   &:focus {
@@ -56,12 +62,6 @@
     opacity: 1;
     @include transition(transform);
   }
-}
-
-.portfolio-cards__image-wrapper {
-  z-index: -1;
-  position: relative;
-  overflow: hidden;
 }
 
 .portfolio-cards__overlay {
