@@ -381,6 +381,26 @@ img {
   color: #757575;
 }
 
+.textarea:hover, .textarea:focus {
+  border: 1px solid #2196f3;
+  outline: 0;
+}
+
+.checkbox__input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media screen and (max-width: 478px) {
+  .checkbox__input-wrapper {
+    margin-right: 25px;
+  }
+}
+
 .checkbox__input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -403,7 +423,22 @@ img {
   background-image: url(../images/icon-nocheck.svg);
 }
 
+.checkbox__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .checkbox__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   color: #2196f3;
   font-family: inherit;
 }
@@ -1366,6 +1401,15 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (max-width: 478px) {
+  .checkbox__label {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 8fr 5fr;
+        grid-template-columns: 1fr 8fr 5fr;
+  }
 }
 
 @media screen and (min-width: 1200px) {

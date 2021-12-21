@@ -63,6 +63,11 @@
 
   color: $secondary-shade3-color;
 
+  @media screen and (max-width: 478px) {
+    display: grid;
+    grid-template-columns: 1fr 8fr 5fr;
+  }
+
   @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.71;
