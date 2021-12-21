@@ -1,11 +1,10 @@
 .contacts {
-  @media screen and (max-width: 767px) {
-  }
   @media screen and (min-width: $tablet) {
     margin-left: auto;
     display: flex;
     flex-direction: column-reverse;
   }
+
   @media screen and (min-width: $desktop) {
     flex-direction: row-reverse;
     align-items: center;
