@@ -107,14 +107,11 @@
   }
 }
 
-.checkbox__input-wrapper {
-  display: flex;
-  justify-content: flex-start;
-
-  @media screen and (max-width: 478px) {
-    margin-right: 25px;
-  }
-}
+// .checkbox__input-wrapper {
+//   @media screen and (max-width: 478px) {
+//     margin-right: 25px;
+//   }
+// }
 
 .checkbox__input {
   -webkit-appearance: none;
@@ -135,6 +132,10 @@
   display: inline-block;
   fill: $primary-shade-color;
   background-image: url(../images/icon-nocheck.svg);
+
+  @media screen and (max-width: 478px) {
+    margin-right: 25px;
+  }
 }
 
 .checkbox__text {

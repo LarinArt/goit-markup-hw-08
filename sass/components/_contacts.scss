@@ -41,7 +41,21 @@
   letter-spacing: 0.02em;
   color: $secondary-shade3-color;
 
-  &--secondary {
+  &--big-size {
+    font-size: 24px;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+    }
+  }
+
+  &--medium-size {
     text-decoration: none;
     font-style: normal;
     font-size: 14px;
@@ -67,24 +81,7 @@
   }
 }
 
-.contacts-link--primary {
-  font-weight: 500;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  font-size: 24px;
-
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    font-size: 14px;
-  }
-}
-
-.mobile--tel {
+.contacts__link--accent-color {
   @media screen and (max-width: 767px) {
     font-size: 34px;
     color: $accent-color;
@@ -100,20 +97,8 @@
     fill: currentColor;
     margin-right: 10px;
   }
-
-  @media screen and (max-width: 1199px) {
-    &.icon--desktop {
-      display: none;
-    }
-  }
-
-  @media screen and (min-width: $desktop) {
-    &.icon--tablet {
-      display: none;
-    }
-  }
 }
-.icon--tel {
+.contacts__icon--tel {
   @media screen and (min-width: $tablet) {
     width: 10px;
     height: 14px;
@@ -124,7 +109,7 @@
     height: 16px;
   }
 }
-.icon--email {
+.contacts__icon--email {
   @media screen and (min-width: $tablet) {
     width: 14px;
     height: 10px;

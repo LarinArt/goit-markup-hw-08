@@ -1,4 +1,4 @@
-.mobile-container {
+.mobile-menu {
   z-index: 1;
 
   @media screen and (max-width: 767px) {
@@ -40,7 +40,7 @@
   @media screen and (max-width: 767px) {
     margin: 64px -10px 0;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   @media screen and (min-width: $tablet) {
@@ -49,9 +49,12 @@
 }
 .menu-social__item {
   &:not(:last-child) {
-    border-right: 1px solid rgba($primary-shade-color, 0.2);
+    @media screen and (min-width: $mobile) {
+      border-right: 1px solid rgba($primary-shade-color, 0.2);
+    }
   }
 }
+
 .menu-social__link {
   @include transition(color);
   text-decoration: none;
