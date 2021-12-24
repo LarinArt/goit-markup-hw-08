@@ -41,20 +41,6 @@
   letter-spacing: 0.02em;
   color: $secondary-shade3-color;
 
-  &--big-size {
-    font-size: 24px;
-
-    @media screen and (min-width: $tablet) {
-      display: flex;
-      align-items: center;
-      font-size: 12px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      font-size: 14px;
-    }
-  }
-
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
@@ -72,9 +58,34 @@
   }
 }
 
-.contacts__link--accent-color {
+.contacts__link--medium-size {
+  font-size: 24px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+  }
+}
+
+.contacts__link--big-size {
   @media screen and (max-width: 767px) {
     font-size: 34px;
+    color: $accent-color;
+  }
+
+  @media screen and (max-width: 376px) {
+    font-size: 27px;
+    color: $accent-color;
+  }
+}
+
+.contacts__link--accent-color {
+  @media screen and (max-width: 767px) {
     color: $accent-color;
   }
 }
