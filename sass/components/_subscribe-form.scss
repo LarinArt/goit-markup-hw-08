@@ -1,11 +1,31 @@
-.footer__form-element {
-  @media screen and (max-width: 1199px) {
-    margin-top: 60px;
-  }
-}
-
 .subscribe-form {
   @media screen and (min-width: $desktop) {
     display: flex;
+  }
+}
+
+.subscribe-form__input {
+  height: 50px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 15px 16px;
+  border: 1px solid rgba($secondary-color, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba($primary-color, 0.15));
+  border-radius: 4px;
+  color: $secondary-color;
+  background-color: $primary-shade3-color;
+
+  &:focus {
+    outline: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin: 0 12px 0 0;
+    width: 358px;
   }
 }

@@ -22,23 +22,6 @@
   }
 }
 
-.map-link {
-  text-decoration: none;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: $secondary-color;
-}
-
-.footer__contacts {
-  margin-top: 20px;
-}
-
-.footer__contacts-item {
-  margin-top: 9px;
-}
-
 .footer__social-wrapper {
   width: 206px;
   @media screen and (max-width: 767px) {
@@ -57,5 +40,11 @@
 
   @media screen and (min-width: $desktop) {
     text-align: left;
+  }
+}
+
+.footer__form-element {
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
   }
 }

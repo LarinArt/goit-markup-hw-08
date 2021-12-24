@@ -2,10 +2,14 @@
   transition: $type $animation-duration $timing-function;
 }
 
-@mixin bg-img($image-link) {
-  background-image: linear-gradient(
-      rgba($primary-shade4-color, 0.4),
-      rgba($primary-shade4-color, 0.4)
-    ),
-    url($image-link);
-} ;
+@mixin bg-img($image-link, $linear-gradient: true) {
+  @if $linear-gradient {
+    background-image: linear-gradient(
+        rgba($primary-shade4-color, 0.4),
+        rgba($primary-shade4-color, 0.4)
+      ),
+      url($image-link);
+  } @else {
+    background-image: url($image-link);
+  }
+}

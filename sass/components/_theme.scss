@@ -14,28 +14,28 @@
   background-position: center;
   background-size: cover;
   background-color: $secondary-shade2-color;
-  @include bg-img("../images/theme-mobile.jpg");
+  @include bg-img("../images/theme-mobile.jpg", $linear-gradient: true);
 
   @media (min-resolution: 2dppx) {
-    @include bg-img("../images/theme-mobile2x.jpg");
+    @include bg-img("../images/theme-mobile2x.jpg", $linear-gradient: true);
   }
 
   @media (min-width: 480px) {
-    @include bg-img("../images/theme-tablet.jpg");
+    @include bg-img("../images/theme-tablet.jpg", $linear-gradient: true);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      @include bg-img("../images/theme-tablet@2x.jpg");
+      @include bg-img("../images/theme-tablet@2x.jpg", $linear-gradient: true);
     }
   }
   @media (min-width: 768px) {
-    @include bg-img("../images/theme-desktop.jpg");
+    @include bg-img("../images/theme-desktop.jpg", $linear-gradient: true);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      @include bg-img("../images/theme-desktop@2x.jpg");
+      @include bg-img("../images/theme-desktop@2x.jpg", $linear-gradient: true);
     }
   }
 }

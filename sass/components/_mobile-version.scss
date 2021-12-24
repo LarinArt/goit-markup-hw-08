@@ -26,7 +26,7 @@
   }
 }
 
-.menu-margin {
+.menu-contact {
   @media screen and (min-width: 768px) {
     margin-left: auto;
   }
@@ -51,6 +51,18 @@
   &:not(:last-child) {
     @media screen and (min-width: $mobile) {
       border-right: 1px solid rgba($primary-shade-color, 0.2);
+    }
+  }
+
+  @media screen and (min-width: 346px) and (max-width: 436px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 345px) {
+    &:nth-child(-n + 2) {
+      margin-bottom: 10px;
     }
   }
 }

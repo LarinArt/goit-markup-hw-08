@@ -52,32 +52,6 @@
   color: currentColor;
 }
 
-.input--subscribe {
-  height: 50px;
-  margin-bottom: 20px;
-  width: 100%;
-  padding: 15px 16px;
-  border: 1px solid rgba($secondary-color, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba($primary-color, 0.15));
-  border-radius: 4px;
-  color: $secondary-color;
-  background-color: $primary-shade3-color;
-
-  &:focus {
-    outline: 0;
-  }
-
-  @media screen and (min-width: $tablet) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin: 0 12px 0 0;
-    width: 358px;
-  }
-}
-
 .textarea__field {
   display: flex;
   flex-direction: column;
@@ -107,11 +81,34 @@
   }
 }
 
-// .checkbox__input-wrapper {
-//   @media screen and (max-width: 478px) {
-//     margin-right: 25px;
-//   }
-// }
+.checkbox__label {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  color: $secondary-shade3-color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    justify-content: center;
+  }
+}
+
+.checkbox__input-wrapper {
+  display: flex;
+  align-items: center;
+}
 
 .checkbox__input {
   -webkit-appearance: none;
@@ -133,19 +130,12 @@
   fill: $primary-shade-color;
   background-image: url(../images/icon-nocheck.svg);
 
-  @media screen and (max-width: 478px) {
+  @media screen and (max-width: 479px) {
     margin-right: 25px;
   }
 }
 
-.checkbox__text {
-  display: flex;
-  justify-content: center;
-}
-
 .checkbox__link {
-  display: flex;
-  justify-content: flex-end;
   color: $accent-color;
   font-family: $font-inherit;
 }

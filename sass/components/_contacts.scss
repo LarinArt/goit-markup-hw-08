@@ -55,15 +55,6 @@
     }
   }
 
-  &--medium-size {
-    text-decoration: none;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: rgba($secondary-color, 0.6);
-  }
-
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
@@ -119,4 +110,30 @@
     width: 16px;
     height: 12px;
   }
+}
+
+.secondary-contacts {
+  margin-top: 20px;
+}
+
+.secondary-contacts__map-link {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $secondary-color;
+}
+
+.secondary-contacts__link {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba($secondary-color, 0.6);
+}
+
+.secondary-contacts__item {
+  margin-top: 9px;
 }
