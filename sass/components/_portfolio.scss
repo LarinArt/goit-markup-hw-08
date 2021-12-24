@@ -26,6 +26,9 @@
   }
 
   @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
@@ -36,14 +39,14 @@
 }
 
 .portfolio-cards__link {
-  display: block;
+  display: flex;
+  flex-grow: 1;
   @include transition(box-shadow);
   text-decoration: none;
 }
 
 .portfolio-cards__image-wrapper {
   cursor: pointer;
-  // z-index: -1;
   position: relative;
   overflow: hidden;
   @include transition(box-shadow);
@@ -86,10 +89,10 @@
 }
 
 .portfolio-cards__text-wrapper {
+  flex-grow: 1;
   background: $secondary-color;
   border: 1px solid $secondary-shade1-color;
   border-top: none;
-  box-sizing: border-box;
   padding: 20px 24px;
 }
 
